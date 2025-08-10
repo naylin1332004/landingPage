@@ -39,6 +39,8 @@ header{
 .navbar{
     background: linear-gradient(rgba(0,0,0,0.3),var(--primary-color));
     padding:20px 30px;
+
+    transition: 0.7s;
 }
 
 .navmenus{
@@ -172,3 +174,49 @@ header{
 /* <!-- end About US  Section  --> */
 
 
+/* <!-- start Property Section  --> */
+.titles{
+    text-transform: uppercase;
+    /* background-color: steelblue; */
+    display: inline;
+
+    padding: 5px 20px;
+
+    position: relative;
+}
+
+.titles::before,.titles::after{
+    content:'';
+    width: 20px;
+    height: 20px;
+    /* background-color: yellow; */
+
+    position: absolute;
+}
+
+.titles::before{
+    left: 0;
+    bottom: 0;
+
+    border-left:3px solid var(--fruit-color) ;
+    border-bottom:3px solid var(--fruit-color) ;
+}
+
+.titles::after{
+    right: 0;
+    top: 0;
+
+    border-right: 3px solid var(--fruit-color);
+    border-top: 3px solid var(--fruit-color);
+}
+
+.propertylists{
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.activeitems{
+    color: var(--primary-color);
+}
+/* <!-- End  Property Section  --> */
