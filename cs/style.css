@@ -220,3 +220,72 @@ header{
     color: var(--primary-color);
 }
 /* <!-- End  Property Section  --> */
+
+/* Start adv section  */
+.missions{
+    background-color: var(--primary-color);
+}
+
+.adimages{
+    width: 400px;
+}
+
+.fromlefts{
+    animation-name: fromleftani;
+    animation-duration: 3s;
+}
+
+.fromrights{
+     animation-name: fromrightani;
+     animation-duration: 3s;
+}
+
+@keyframes fromleftani {
+
+    from{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+@keyframes fromrightani {
+
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+/* End adv section  */
+
+
+/* start Services Section  */
+.services{
+    background: linear-gradient(
+        200deg,
+        var(--secondary-color),
+        var(--primary-color)
+    
+    );
+
+
+}
+
+.servicecards::before{
+
+}
+/* End  service Section  */
